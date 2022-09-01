@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:CustomControls="clr-namespace:Test.CustomControls"
+             xmlns:CustomControl="clr-namespace:TestLibrary.CustomControl;assembly=TestLibrary"
              x:Class="Test.MainPage">
 
     <ScrollView>
@@ -10,13 +10,12 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <CustomControls:EntriControl Placeholder="Username"/>
-            <CustomControls:EntriControl Placeholder="Password" BorderColor="Green"/>
+            <CustomControl:EntriControl Placeholder="Username" BorderColor="Red"/>
+            <CustomControl:EntriControl Placeholder="Password"/>
             <Button
                 x:Name="CounterBtn"
                 Text="Login"
                 HorizontalOptions="Center" />
-
         </VerticalStackLayout>
     </ScrollView>
 
